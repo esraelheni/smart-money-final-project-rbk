@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.index { 
+    overflow-x: hidden;
+    background: black;
+    background-image: url(../IMAGES/background2.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+    transition: background 1s;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a,.balance,.categories{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+nav:hover{
+    background: #fff;
+}
+nav:hover ul li a{
+    color: #333;
+}
+
+nav:hover .balance{
+    color: #333;
+}
+
+nav:hover .categories{
+    color: #333;
+}
+
+.txt{
+   margin-top: 9%; 
+   margin-left: 9%;
+   color: #fff;
+}
+.txt h1{
+    font-size: 120px;
+    line-height: 140px;
+    font-weight: 600;
+}
+
+.txt p{
+    font-size: 25px;
+    max-width: 500px;
+    line-height: 28px;
+}
+
+.links{
+    margin-top: 30px;
+}
+
+.links a,.balance,.categories{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.asl{
+    animation: sl 1s linear forwards;
+}
+
+@keyframes sl{
+    0%{
+        transform: translate(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+.balance{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.categories:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.animate{
+    animation: scaleup 0.5s linear;
+    transform: scale(2);
+}
+
+.pmparent{
+    word-spacing: 20px;
+}
+
+.pm{
+    cursor:pointer;
+    font-size: 40px;
+}
+
+.pm:hover{
+    text-decoration: underline;
+}
+
+.balance:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.contact{
+    text-decoration: underline;
+}
+
+.transfer{
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.transfer:hover{
+    color: wheat;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>SignIn</title>
+    <meta name="viewport" content="width=device-width,
+      initial-scale=1.0"/>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../JAVASCRIPT/script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="form_titre">S I G N I N</h1>
+      <form id="signinForm">
+        <div class="info">
+          <div class="contact_info">
+            <label for="username">Username</label>
+            <input type="text"
+                    id="username"
+                    name="username"
+                    placeholder="Username" required/>
+          </div>
+          <div class="contact_info">
+            <label for="password">Password</label>
+            <input type="password"
+                    id="password"
+                    name="password"
+                    placeholder="password" required/>
+          </div>
+        </div>
+        <div class="btn">
+          <input type="button" value="SIGN IN" id="signin">
+        </div>
+        <p>Not a member?<a href="signup.html">Sign up now</a></p>
+      </form>
+    </div>
+  </body>
+</html>

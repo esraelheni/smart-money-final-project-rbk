@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" class="index">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Money</title>
+    <link rel="stylesheet" href="../CSS/mainstyle.css">
+    <script src="../JAVASCRIPT/smartmoney.js"></script>
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <ul>
+                <li value="1000" class="balance" id="balance" onclick="addtobalance()">Balance : 1000 DNT</li>
+                <li value="0" class="balance" id="spent" >Spent : 0 DNT</li>
+                <li class="balance" id="saved" onclick="addtosaved()">Saved : 0 DNT</li>
+                <div id="categories_main">
+                    <li class="categories" id="plus" onclick="addcat()">+</li>
+                    <li class="categories" id="food" value="0" onmouseover="addclass('food')" onmouseout="removeclass('food')" onclick="showcat('food')">Food</li>
+                    <li class="categories" id="transport" value="0" onmouseover="addclass('transport')" onmouseout="removeclass('transport')" onclick="showcat('transport')">Transport</li>
+                    <li class="categories" id="taxes" value="0" onmouseover="addclass('taxes')" onmouseout="removeclass('taxes')" onclick="showcat('taxes')">Taxes</li>
+                    <li class="categories" id="gym" value="0" onmouseover="addclass('gym')" onmouseout="removeclass('gym')" onclick="showcat('gym')">Gym</li>
+                    <li class="categories" id="health" value="0" onmouseover="addclass('health')" onmouseout="removeclass('health')" onclick="showcat('health')">Health</li>
+                    <li class="categories" id="assurance" value="0" onmouseover="addclass('assurance')" onmouseout="removeclass('assurance')" onclick="showcat('assurance')">Assurance</li>
+                    <li class="categories" id="sadaka" value="0" onmouseover="addclass('sadaka')" onmouseout="removeclass('sadaka')" onclick="showcat('sadaka')">Sadaka</li>
+                </div>
+            </ul>
+        </nav>
+    </div>
+    <br><br><br><br>
+    <div class="txt" id="maindiv">
+        <h1 class="asl">Smart<br>Money</h1>
+        <p class="asl">"Spend wisely"</p>
+    </div>
+</body>
+</html>
